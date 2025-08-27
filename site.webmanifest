@@ -1,0 +1,22 @@
+{
+    "name": "Николай Романов - Официальный сайт",
+    "short_name": "Н. Романов",
+    "description": "Официальный сайт российского актера, продюсера, композитора и литератора Николая Романова",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "favicon-16.svg",
+            "sizes": "16x16",
+            "type": "image/svg+xml"
+        }
+    ],
+    "theme_color": "#d4af37",
+    "background_color": "#1a1a1a",
+    "display": "standalone",
+    "start_url": "/",
+    "lang": "ru"
+}
