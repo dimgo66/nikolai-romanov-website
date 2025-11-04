@@ -38,7 +38,7 @@
     <meta name="theme-color" content="#d4af37">
     <meta name="msapplication-TileColor" content="#1a1a1a">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" as="image" href="images/745427-1280.jpg">
+    <link rel="preload" as="image" href="images/745427-1280.webp" type="image/webp">
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -224,7 +224,10 @@
                 rgba(0, 0, 0, 0.3), 
                 rgba(0, 0, 0, 0.15)
             ),
-            url('images/745427-1280.jpg');
+            image-set(
+                url('images/745427-1280.webp') type('image/webp'),
+                url('images/745427-1280.jpg') type('image/jpeg')
+            );
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -243,7 +246,10 @@
                 background-image: linear-gradient(
                     rgba(0, 0, 0, 0.3),
                     rgba(0, 0, 0, 0.15)
-                ), url('images/745427-768.jpg');
+                ), image-set(
+                    url('images/745427-768.webp') type('image/webp'),
+                    url('images/745427-768.jpg') type('image/jpeg')
+                );
                 background-attachment: scroll; /* better perf on mobile */
             }
         }
@@ -254,7 +260,10 @@
                 background-image: linear-gradient(
                     rgba(0, 0, 0, 0.3),
                     rgba(0, 0, 0, 0.15)
-                ), url('images/745427-1920.jpg');
+                ), image-set(
+                    url('images/745427-1920.webp') type('image/webp'),
+                    url('images/745427-1920.jpg') type('image/jpeg')
+                );
             }
         }
 
