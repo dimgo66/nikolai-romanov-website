@@ -190,10 +190,26 @@
             text-shadow: 2px 2px 4px rgba(212, 175, 55, 0.3);
         }
 
-        /* Уменьшаем межстрочный интервал заголовка на мобильных устройствах */
+        /* Адаптивный размер заголовка - максимально крупный, но помещается в экран */
+        .hero-title {
+            font-size: clamp(3.75rem, 12vw, 96px); /* Адаптивный размер от 60px до 96px */
+            line-height: 1.1;
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+        
+        /* Для узких экранов минимальный размер 60px */
         @media (max-width: 768px) {
-            h1.cinematic-header {
-                line-height: 1.1;
+            .hero-title {
+                font-size: clamp(3.75rem, 10vw, 96px); /* Минимум 60px на узких экранах */
+            }
+        }
+        
+        /* Для больших экранов используем максимальный размер */
+        @media (min-width: 1200px) {
+            .hero-title {
+                font-size: 96px;
             }
         }
 
@@ -583,8 +599,8 @@
             <i class="fas fa-video"></i>
         </div>
         <div class="text-center z-10">
-            <h1 class="cinematic-header font-bold mb-6" style="font-size: 96px;">
-                Николай Романов
+            <h1 class="cinematic-header font-bold mb-6 hero-title">
+                Николай <br> Романов
             </h1>
             <p class="text-2xl md:text-3xl text-gray-300 mb-4 font-light">
                 Актёр • Певец •  Композитор • Продюсер
