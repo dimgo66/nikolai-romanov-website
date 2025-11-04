@@ -220,17 +220,20 @@
 
         .hero-section {
             background: linear-gradient(
-                rgba(0, 0, 0, 0.7), 
-                rgba(0, 0, 0, 0.5)
+                rgba(0, 0, 0, 0.3), 
+                rgba(0, 0, 0, 0.15)
             ),
             url('https://www.kino-teatr.ru/acter/photo/9/0/9409/745427.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             position: relative;
+            padding-bottom: 2rem;
         }
 
         .spotlight {
@@ -1224,13 +1227,7 @@
             });
         });
 
-        // Add parallax effect to hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero-section');
-            const speed = scrolled * 0.5;
-            parallax.style.transform = `translateY(${speed}px)`;
-        });
+        // Parallax via background attachment is handled in CSS to avoid layout overlap
 
         // Animate timeline items on scroll
         const observerOptions = {
