@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://nikolai-romanov.ru/">
     <meta property="og:title" content="Николай Романов - Актер, Продюсер, Композитор">
     <meta property="og:description" content="Официальный сайт Николая Романова - выдающегося российского артиста, актера, продюсера, композитора и литератора.">
-    <meta property="og:image" content="https://ruskino.ru/media/portret/006/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg">
+    <meta property="og:image" content="images/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Официальный сайт Николая Романова">
@@ -28,7 +28,7 @@
     <meta property="twitter:url" content="https://nikolai-romanov.ru/">
     <meta property="twitter:title" content="Николай Романов - Актер, Продюсер, Композитор">
     <meta property="twitter:description" content="Официальный сайт Николая Романова - выдающегося российского артиста. Фильмография, музыка, литература.">
-    <meta property="twitter:image" content="https://ruskino.ru/media/portret/006/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg">
+    <meta property="twitter:image" content="images/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg">
     
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -152,7 +152,7 @@
           "description": "О людях XX века"
         }
       ],
-      "image": "https://ruskino.ru/media/portret/006/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg",
+      "image": "images/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg",
       "url": "https://nikolai-romanov.ru/",
       "description": "Выдающийся российский артист, актер, продюсер, композитор и литератор. Генеральный директор кинокомпании ЧЕРОМАФИЛЬМ.",
       "sameAs": [
@@ -223,7 +223,7 @@
                 rgba(0, 0, 0, 0.3), 
                 rgba(0, 0, 0, 0.15)
             ),
-            url('https://www.kino-teatr.ru/acter/photo/9/0/9409/745427.jpg');
+            url('images/745427.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -234,6 +234,15 @@
             justify-content: flex-end;
             position: relative;
             padding-bottom: 2rem;
+        }
+
+        /* Wide-screen adjustments to keep the face visible and avoid over-scaling */
+        @media (min-width: 1280px) {
+            .hero-section {
+                height: 80vh;            /* reduce excessive vertical scale */
+                max-height: 900px;       /* hard cap for ultra-wide displays */
+                background-position: center 20%; /* shift focal point slightly down */
+            }
         }
 
         .spotlight {
@@ -559,7 +568,7 @@
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://ruskino.ru/media/portret/006/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg" 
+                    <img src="images/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg" 
                          alt="Николай Романов" 
                          class="rounded-2xl shadow-2xl w-full max-w-md mx-auto">
                 </div>
@@ -601,7 +610,7 @@
                 <div class="timeline-item">
                     <div class="film-card">
                         <div class="flex flex-col md:flex-row gap-6">
-                            <img src="https://www.kino-teatr.ru/movie/posters/big/7/3/8137.jpg" 
+                            <img src="images/8137.jpg" 
                                  alt="Юнкера" 
                                  class="w-full md:w-48 h-64 object-cover rounded-lg">
                             <div class="flex-1">
@@ -620,7 +629,7 @@
                 <div class="timeline-item">
                     <div class="film-card">
                         <div class="flex flex-col md:flex-row gap-6">
-                            <img src="https://www.kino-teatr.ru/movie/posters/big/3/8/105283.jpg" 
+                            <img src="images/105283.jpg" 
                                  alt="Подпоручикъ Ромашовъ" 
                                  class="w-full md:w-48 h-64 object-cover rounded-lg">
                             <div class="flex-1">
@@ -822,7 +831,7 @@
             <div class="film-card">
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="https://screenstage.ru/wp-scrcontent/uploads/2016/09/14-1_17.jpg" 
+                        <img src="images/14-1_17.jpg" 
                              alt="Николай Романов и Игорь Черницкий" 
                              class="w-full rounded-lg shadow-lg">
                     </div>
@@ -863,7 +872,7 @@
             
             <div class="photo-gallery">
                 <div class="photo-item">
-                    <img src="https://www.kino-teatr.ru/acter/album/9409/745434.jpg" alt="Кадр из фильма Юнкера">
+                    <img src="images/745434.jpg" alt="Кадр из фильма Юнкера">
                     <div class="photo-overlay">
                         <h3 class="font-bold text-lg">Съемки фильма "Юнкера"</h3>
                         <p class="text-sm opacity-75">На съемочной площадке</p>
@@ -871,7 +880,7 @@
                 </div>
                 
                 <div class="photo-item">
-                    <img src="https://www.kino-teatr.ru/acter/album/9409/745439.jpg" alt="Кадр из фильма Юнкера">
+                    <img src="images/745439.jpg" alt="Кадр из фильма Юнкера">
                     <div class="photo-overlay">
                         <h3 class="font-bold text-lg">Николай Романов в роли</h3>
                         <p class="text-sm opacity-75">Фильм "Юнкера" (2007)</p>
@@ -879,7 +888,7 @@
                 </div>
                 
                 <div class="photo-item">
-                    <img src="https://ruskino.ru/media/portret/006/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg" alt="Николай Романов">
+                    <img src="images/pj9FWt7BaKKJQFSPKia8vLU8Hm9.jpg" alt="Николай Романов">
                     <div class="photo-overlay">
                         <h3 class="font-bold text-lg">Николай Романов</h3>
                         <p class="text-sm opacity-75">Портрет артиста</p>
@@ -887,7 +896,7 @@
                 </div>
                 
                 <div class="photo-item">
-                    <img src="https://www.kino-teatr.ru/acter/album/9409/745435.jpg" alt="Съемочный процесс">
+                    <img src="images/745435.jpg" alt="Съемочный процесс">
                     <div class="photo-overlay">
                         <h3 class="font-bold text-lg">За кадром</h3>
                         <p class="text-sm opacity-75">Съемочный процесс</p>
@@ -895,7 +904,7 @@
                 </div>
                 
                 <div class="photo-item">
-                    <img src="https://ruskino.ru/media/gallery/14893/EiQbr1RRcB50dndsbO5hsXOZV7m.jpg" alt="Подпоручикъ Ромашовъ кадр">
+                    <img src="images/EiQbr1RRcB50dndsbO5hsXOZV7m.jpg" alt="Подпоручикъ Ромашовъ кадр">
                     <div class="photo-overlay">
                         <h3 class="font-bold text-lg">Драматическая сцена</h3>
                         <p class="text-sm opacity-75">"Подпоручикъ Ромашовъ"</p>
@@ -903,7 +912,7 @@
                 </div>
                 
                 <div class="photo-item">
-                    <img src="https://www.kino-teatr.ru/acter/album/9409/745441.jpg" alt="Николай Романов актер">
+                    <img src="images/745441.jpg" alt="Николай Романов актер">
                     <div class="photo-overlay">
                         <h3 class="font-bold text-lg">В образе офицера</h3>
                         <p class="text-sm opacity-75">Историческая драма</p>
